@@ -179,8 +179,8 @@ target_platform:
 tk:
 - '8.6'
 vc:
-- '14'
 - '9'
+- '14'
 vlfeat:
 - '0.9'
 xerces_c:

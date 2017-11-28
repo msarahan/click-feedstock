@@ -55,6 +55,9 @@ install:
     - cmd: conda install -n root --quiet --yes conda-forge-build-setup
     - cmd: run_conda_forge_build_setup
 
+    # testing purposes: get conda-build from defaults
+    - cmd: conda install -n root --quiet --yes -c defaults conda-build
+
 # Skip .NET project specific build phase.
 build: off
 

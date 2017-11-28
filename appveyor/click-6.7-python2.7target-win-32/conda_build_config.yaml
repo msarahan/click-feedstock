@@ -20,8 +20,8 @@ cairo:
 cpu_optimization_target:
 - nocona
 cross_compiler_target_platform:
-- win-32
 - win-64
+- win-32
 curl:
 - '7.54'
 cxx_compiler:

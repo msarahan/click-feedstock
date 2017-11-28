@@ -57,6 +57,9 @@ conda clean --lock
 conda install --yes --quiet conda-forge-build-setup
 source run_conda_forge_build_setup
 
+# testing purposes: get conda-build from defaults
+conda install -n root --quiet --yes -c defaults conda-build
+
 conda build /recipe_root/recipe -m /recipe_root/circle/$FOLDER/conda_build_config.yaml --quiet || exit 1
 upload_or_check_non_existence /recipe_root conda-forge --channel=main || exit 1
 
