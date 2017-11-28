@@ -1,7 +1,7 @@
 version: 2
 
 jobs:
-  click-6.7-python2.7:
+  build_click-6.7-python2.7:
     working_directory: ~/test
     machine: true
     environment:
@@ -18,7 +18,7 @@ jobs:
       - run:
           # Run, test and (if we have a BINSTAR_TOKEN) upload the distributions.
           command: ./ci_support/run_docker_build.sh
-  click-6.7-python3.5:
+  build_click-6.7-python3.5:
     working_directory: ~/test
     machine: true
     environment:
@@ -35,7 +35,7 @@ jobs:
       - run:
           # Run, test and (if we have a BINSTAR_TOKEN) upload the distributions.
           command: ./ci_support/run_docker_build.sh
-  click-6.7-python3.6:
+  build_click-6.7-python3.6:
     working_directory: ~/test
     machine: true
     environment:

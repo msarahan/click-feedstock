@@ -9,8 +9,8 @@ VERBOSE_CM:
 arpack:
 - '3.5'
 blas_impl:
-- mkl
 - openblas
+- mkl
 boost:
 - '1.65'
 bzip2:
@@ -179,8 +179,8 @@ target_platform:
 tk:
 - '8.6'
 vc:
-- '9'
 - '14'
+- '9'
 vlfeat:
 - '0.9'
 xerces_c:
@@ -190,9 +190,9 @@ xz:
 zeromq:
 - '4.2'
 zip_keys:
-- - pyqt
-  - qt
 - - python
   - ipython
+- - pyqt
+  - qt
 zlib:
 - '1.2'
