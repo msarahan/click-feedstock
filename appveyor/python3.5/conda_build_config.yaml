@@ -7,22 +7,25 @@ VERBOSE_CM:
 arpack:
 - '3.5'
 blas_impl:
-- openblas
 - mkl
+- openblas
 boost:
 - '1.65'
 bzip2:
 - '1.0'
 c_compiler:
-- gcc
+- vs2015
 cairo:
 - '1.14'
 cpu_optimization_target:
 - nocona
+cross_compiler_target_platform:
+- win-32
+- win-64
 curl:
 - '7.54'
 cxx_compiler:
-- gxx
+- vs2015
 dbus:
 - '1'
 expat:
@@ -34,7 +37,9 @@ flann:
 fontconfig:
 - '2.12'
 fortran_compiler:
-- gfortran
+- intel-fortran
+fortran_compiler_version:
+- 16.0.4
 freetype:
 - '2.8'
 geos:
@@ -124,7 +129,7 @@ netcdf_fortran:
 nettle:
 - '3.3'
 numpy:
-- '1.9'
+- '1.11'
 openblas:
 - 0.2.20
 openjpeg:
@@ -155,7 +160,7 @@ protobuf:
 pyqt:
 - '5.6'
 python:
-- '3.6'
+- '3.5'
 qt:
 - '5.6'
 r_base:
@@ -173,12 +178,11 @@ sqlite:
 sundials:
 - '2.7'
 target_platform:
-- linux-64
+- win-64
 tk:
 - '8.6'
 vc:
 - '14'
-- '9'
 vlfeat:
 - '0.9'
 xerces_c:
@@ -188,9 +192,13 @@ xz:
 zeromq:
 - '4.2'
 zip_keys:
-- - python
-  - ipython
 - - pyqt
   - qt
+- - python
+  - ipython
+  - vc
+  - c_compiler
+  - cxx_compiler
+  - fortran_compiler_version
 zlib:
 - '1.2'

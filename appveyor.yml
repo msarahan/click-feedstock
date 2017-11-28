@@ -9,17 +9,17 @@ environment:
     secure: ipv/06DzgA7pzz2CIAtbPxZSsphDtF+JFyoWRnXkn3O8j7oRe3rzqj3LOoq2DZp4
 
   matrix:
-    - FOLDER: click-6.7-python2.7
+    - FOLDER: python2.7
   
-    - FOLDER: click-6.7-python3.5
+    - FOLDER: python3.5
   
-    - FOLDER: click-6.7-python3.6
+    - FOLDER: python3.6
   
-    - FOLDER: click-6.7-python2.7target-win-32
+    - FOLDER: python2.7target-win-32
   
-    - FOLDER: click-6.7-python3.5target-win-32
+    - FOLDER: python3.5target-win-32
   
-    - FOLDER: click-6.7-python3.6target-win-32
+    - FOLDER: python3.6target-win-32
   
 
 # We always use a 64-bit machine, but can build x86 distributions
