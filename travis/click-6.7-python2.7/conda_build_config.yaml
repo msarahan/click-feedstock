@@ -9,8 +9,8 @@ VERBOSE_CM:
 arpack:
 - '3.5'
 blas_impl:
-- openblas
 - mkl
+- openblas
 boost:
 - '1.65'
 bzip2:

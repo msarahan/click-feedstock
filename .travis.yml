@@ -56,6 +56,6 @@ install:
       source run_conda_forge_build_setup
 
 script:
-  - conda build travis/$FOLDER
+  - conda build ./recipe -m ./travis/${FOLDER}/conda_build_config.yaml
 
   - upload_or_check_non_existence ./recipe conda-forge --channel=main
