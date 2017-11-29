@@ -54,7 +54,7 @@ install:
       conda config --set show_channel_urls true
       conda install --yes --quiet conda-forge-build-setup
       source run_conda_forge_build_setup
-      conda install -n root --quiet --yes -c defaults conda-build
+      conda install -n root --quiet --yes -c msarahan conda-build
 
 script:
   - conda build ./recipe -m ./travis/${FOLDER}/conda_build_config.yaml
